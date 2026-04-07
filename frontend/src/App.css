@@ -1,0 +1,1065 @@
+/* Custom styles */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 20px;
+  z-index: 1020;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom Button Styles */
+.btn-outline-primary {
+  transition: all 0.3s ease !important;
+  border-radius: 8px !important;
+  padding: 8px 20px !important;
+  font-weight: 500 !important;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(177, 192, 213, 0.3) !important;
+  background-color: #a9c3eb !important;
+  color: rgb(171, 60, 60) !important;
+}
+
+.btn-primary {
+  transition: all 0.3s ease !important;
+  border-radius: 8px !important;
+  padding: 8px 20px !important;
+  font-weight: 500 !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(228, 232, 233, 0.948) !important;
+  background: linear-gradient(135deg, #d7d9ee 0%, #5e9bea 100%) !important;
+}
+
+/* Remove default blue outline on focus */
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* HERO SECTION IMPROVEMENTS */
+.bg-primary {
+  overflow: hidden;
+}
+
+/* Heading responsive */
+.bg-primary h1 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+/* Paragraph spacing */
+.bg-primary p {
+  font-size: 1rem;
+}
+
+/* Buttons spacing for mobile */
+.bg-primary .btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Image spacing */
+.bg-primary img {
+  margin-top: 20px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .bg-primary h1 {
+    font-size: 2.8rem;
+  }
+
+  .bg-primary .btn {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .bg-primary img {
+    margin-top: 0;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .bg-primary h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* FEATURES SECTION IMPROVEMENTS */
+
+/* Card hover effect */
+.hover-shadow:hover {
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Icon size responsive */
+.display-1 {
+  font-size: 3rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .display-1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .display-1 {
+    font-size: 4rem;
+  }
+}
+
+/* Section spacing fix */
+.features-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .features-section {
+    padding: 60px 0;
+  }
+}
+
+/* ======================================================================Hero Section Styles */
+/* ========== COMPLETELY RESPONSIVE HERO SECTION ========== */
+
+.hero-custom {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  padding: 80px 0;
+}
+
+/* Row spacing */
+.hero-row {
+  width: 100%;
+  margin: 0;
+}
+
+/* Content Column */
+.hero-content-col {
+  padding: 20px;
+}
+
+/* Image Column */
+.hero-image-col {
+  padding: 20px;
+}
+
+/* Welcome Badge */
+.welcome-badge {
+  margin-bottom: 1.5rem;
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.badge-custom {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Hero Title - Responsive Font Sizes */
+.hero-title {
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  animation: slideInLeft 0.6s ease-out;
+}
+
+/* Mobile (default) */
+.hero-title {
+  font-size: 2rem;
+}
+
+/* Small Mobile (320px and up) */
+@media (min-width: 375px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile Landscape (480px and up) */
+@media (min-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* Laptop (992px and up) */
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Desktop (1200px and up) */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+/* Large Desktop (1400px and up) */
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #FFD89B, #C7E9FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero Description - Responsive */
+.hero-description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  animation: slideInLeft 0.7s ease-out;
+}
+
+/* Mobile (default) */
+.hero-description {
+  font-size: 0.95rem;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 992px) {
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Hero Buttons Container */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  animation: slideInLeft 0.75s ease-out;
+}
+
+/* Button Styles */
+.btn-gradient-custom {
+  background: white;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Button Responsive Sizing */
+/* Mobile */
+.btn-gradient-custom,
+.btn-outline-custom {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .btn-gradient-custom,
+  .btn-outline-custom {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .btn-gradient-custom,
+  .btn-outline-custom {
+    padding: 12px 32px;
+    font-size: 1rem;
+  }
+}
+
+/* Button Hover Effects */
+.btn-gradient-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline-custom:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-3px);
+}
+
+/* Stats Wrapper */
+.stats-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  animation: slideInLeft 0.8s ease-out;
+  flex-wrap: wrap;
+}
+
+/* Mobile - Stats */
+@media (max-width: 576px) {
+  .stats-wrapper {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .stat-divider {
+    display: none;
+  }
+}
+
+/* Stat Items */
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+/* Mobile */
+.stat-number {
+  font-size: 1.5rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .stat-number {
+    font-size: 1.8rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .stat-label {
+    font-size: 0.85rem;
+  }
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Image Container */
+.hero-image-container {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+  text-align: center;
+}
+
+/* Hero Image */
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Image Sizes - Responsive */
+/* Mobile */
+.hero-image {
+  width: 80%;
+  max-width: 280px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero-image {
+    width: 70%;
+    max-width: 350px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .hero-image {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* Floating Icons */
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatElement 3s ease-in-out infinite;
+}
+
+/* Hide floating icons on mobile */
+@media (max-width: 768px) {
+  .floating-icon {
+    display: none;
+  }
+}
+
+/* Tablet - Show but smaller */
+@media (min-width: 768px) and (max-width: 992px) {
+  .floating-icon {
+    font-size: 1.5rem;
+  }
+}
+
+.floating-icon:first-child {
+  top: -20px;
+  right: 20px;
+  animation-delay: 0s;
+}
+
+.floating-icon:nth-child(2) {
+  bottom: -30px;
+  left: 20px;
+  animation-delay: 1s;
+}
+
+.floating-icon:last-child {
+  top: 50%;
+  left: -30px;
+  animation-delay: 2s;
+}
+
+/* Tablet position adjustments */
+@media (min-width: 768px) and (max-width: 992px) {
+  .floating-icon:first-child {
+    top: -10px;
+    right: 10px;
+  }
+  
+  .floating-icon:nth-child(2) {
+    bottom: -20px;
+    left: 10px;
+  }
+  
+  .floating-icon:last-child {
+    left: -20px;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes floatElement {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Layout Adjustments */
+
+/* Tablet and below - Stack content */
+@media (max-width: 991px) {
+  .hero-custom {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .hero-content-col {
+    order: 1;
+  }
+  
+  .hero-image-col {
+    order: 0;
+    margin-bottom: 40px;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .stats-wrapper {
+    justify-content: center;
+  }
+  
+  .welcome-badge {
+    text-align: center;
+  }
+}
+
+/* Large Desktop - Extra spacing */
+@media (min-width: 1400px) {
+  .hero-custom {
+    padding: 100px 0;
+  }
+  
+  .hero-content-col {
+    padding: 40px;
+  }
+  
+  .hero-image-col {
+    padding: 40px;
+  }
+}
+
+/* Fix for very small devices */
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  
+  .stats-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .stat-divider {
+    display: none;
+  }
+  
+  .badge-custom {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+}
+/*===================end=================================================*/
+
+/*====================================================== Navbar Responsive Styling */
+/*====================================================== Navbar Responsive Styling - Right to Left */
+/* Base navbar positioning */
+.navbar {
+  position: relative;
+}
+
+/* Mobile styles - Right to Left Dropdown */
+@media (max-width: 992px) {
+  /* Make navbar collapse slide from right */
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 80%;
+    max-width: 350px;
+    background: white;
+    margin: 0;
+    padding: 80px 20px 20px;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    z-index: 1050;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Show the menu when expanded */
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+  
+  /* Style for nav links - Right aligned */
+  .navbar-nav {
+    margin-bottom: 1.5rem;
+    text-align: right;
+  }
+  
+  .nav-link {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: transparent;
+    color: #0d6efd;
+    padding-right: 10px;
+  }
+  
+  /* Style for buttons container */
+  .navbar-collapse .d-flex {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  /* Style for buttons */
+  .navbar-collapse .custom-button {
+    width: 100% !important;
+  }
+  
+  /* Style for toggle button when menu is open */
+  .navbar-toggler[aria-expanded="true"] {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1060;
+  }
+  
+  /* Close button styling */
+  .navbar-toggler[aria-expanded="true"]::after {
+    content: '✕';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+  }
+}
+
+/* For larger screens, keep normal behavior */
+@media (min-width: 993px) {
+  .navbar-collapse {
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+/* Backdrop overlay when menu is open */
+.navbar.show::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ensure navbar brand and toggle stay above backdrop */
+.navbar-brand, 
+.navbar-toggler {
+  position: relative;
+  z-index: 1060;
+}
+
+/* Custom scrollbar for mobile menu */
+@media (max-width: 992px) {
+  .navbar-collapse::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .navbar-collapse::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .navbar-collapse::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .navbar-collapse::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* Animation for menu items */
+@media (max-width: 992px) {
+  .navbar-collapse.show .nav-link {
+    animation: slideInRight 0.3s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .navbar-collapse.show .nav-link:nth-child(1) { animation-delay: 0.05s; }
+  .navbar-collapse.show .nav-link:nth-child(2) { animation-delay: 0.1s; }
+  .navbar-collapse.show .nav-link:nth-child(3) { animation-delay: 0.15s; }
+  .navbar-collapse.show .nav-link:nth-child(4) { animation-delay: 0.2s; }
+  .navbar-collapse.show .nav-link:nth-child(5) { animation-delay: 0.25s; }
+  
+  .navbar-collapse.show .d-flex {
+    animation: slideInRight 0.3s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+/*===================================================end=================*/
+/*====================================================== FIXED HEADER STYLES =================================================*/
+
+/* Ensure navbar stays fixed at top */
+.navbar.fixed-top {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 1030 !important;
+  background-color: white !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Add padding to body to prevent content from hiding behind fixed header */
+body {
+  padding-top: 76px !important;
+  margin: 0 !important;
+}
+
+/* Responsive padding for smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding-top: 68px !important;
+  }
+}
+
+/* Ensure main content doesn't get hidden behind header */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix for any element that might have margin-top issues */
+*:first-child {
+  margin-top: 0;
+}
+
+/* Ensure smooth transitions for fixed header */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+/* Fix for sticky elements when header is fixed */
+.sticky-top {
+  position: sticky;
+  top: 76px;
+  z-index: 1020;
+}
+
+@media (max-width: 768px) {
+  .sticky-top {
+    top: 68px;
+  }
+}
+
+/* Fix for anchor links when header is fixed */
+html {
+  scroll-padding-top: 76px;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 68px;
+  }
+}
+
+/* Ensure dropdown menu appears above content */
+.dropdown-menu {
+  z-index: 1050 !important;
+}
+
+/* Fix for modal backdrop when header is fixed */
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+/* Ensure header stays on top of all content */
+.navbar {
+  z-index: 1030 !important;
+}
+
+/* Fix for mobile menu backdrop */
+@media (max-width: 992px) {
+  .navbar.show::before {
+    z-index: 1040 !important;
+  }
+  
+  .navbar-collapse {
+    z-index: 1050 !important;
+  }
+  
+  .navbar-toggler {
+    z-index: 1060 !important;
+  }
+}
+
+/* Ensure no content goes behind header on scroll */
+* {
+  scroll-margin-top: 76px;
+}
+
+@media (max-width: 768px) {
+  * {
+    scroll-margin-top: 68px;
+  }
+}
+
+/* Fix for hero section when header is fixed */
+.hero-custom {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure first section doesn't have extra space */
+section:first-of-type {
+  margin-top: 0 !important;
+}
+
+/* Fix for Bootstrap navbar default styles override */
+.navbar.fixed-top {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Smooth transition for header when scrolling */
+.navbar.fixed-top.scrolled {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Optional: Add this if you want header to shrink on scroll */
+@media (min-width: 992px) {
+  .navbar.fixed-top.scrolled {
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+  }
+  
+  .navbar.fixed-top.scrolled .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+}
+
+/*====================================================== END FIXED HEADER STYLES =================================================*/
+/* Auth pages (Login/Signup) - Full screen centered */
+.auth-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Regular pages with header/footer */
+.flex-grow {
+  min-height: calc(100vh - 150px);
+  padding: 80px 0 40px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex-grow {
+    padding: 70px 0 30px 0;
+  }
+}
+
+
+/* Smooth transitions */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+/* Auth Modal Styles */
+.auth-modal .modal-content {
+  border-radius: 20px !important;
+  border: none !important;
+  overflow: hidden;
+}
+
+/* Blur background when modal is open */
+.modal.show .modal-backdrop {
+  backdrop-filter: blur(8px) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Modal animation */
+.modal.fade .modal-dialog {
+  transform: scale(0.9);
+  transition: transform 0.2s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+/* Form input focus effect */
+.auth-modal .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Social buttons hover effect */
+.auth-modal .btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Modal body padding */
+.auth-modal .modal-body {
+  padding: 0 1.5rem 1.5rem !important;
+}
