@@ -8,6 +8,8 @@ const errorMiddleware = require('./middleware/errorMiddleware');
 const { seedCoursesIfEmpty } = require('./utils/seedCourses');
 const productRoutes = require('./routes/productRoutes');
 const authRoutes = require('./routes/authRoutes');
+const { protect } = require('./middleware/authMiddleware'); // ADD THIS
+const User = require('./models/User'); // ADD THIS
 
 const app = express();
 
@@ -26,6 +28,16 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/products', productRoutes);
+
+// User enrollments route (separate from courses)
+app.get('/api/users/enrollments', protect, async (req, res, next) => {
+  try {
+    const user = await User.findById(req.user._id).populate('enrolledCourses').exec();
+    res.json({ enrollments: user.enrolledCourses });
+  } catch (err) {
+    next(err);
+  }
+});
 
 app.get('/api/health', (req, res) => {
   res.json({ ok: true });
