@@ -66,7 +66,7 @@ const Hero = () => {
               flexWrap: 'wrap',
               marginBottom: '2.5rem',
               justifyContent: 'center',
-              justifyContent: 'flex-start'
+              // justifyContent: 'flex-start'
             }} className="justify-content-center justify-content-lg-start">
               <Button 
                 as={Link} 
@@ -127,7 +127,7 @@ const Hero = () => {
               alignItems: 'center',
               flexWrap: 'wrap',
               justifyContent: 'center',
-              justifyContent: 'flex-start'
+              // justifyContent: 'flex-start'
             }} className="justify-content-center justify-content-lg-start">
               <div style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '2rem', fontWeight: '800' }}>10K+</div>
